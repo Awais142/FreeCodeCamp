@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <header id="header">
+      <img
+        src="https://w7.pngwing.com/pngs/679/550/png-transparent-world-map-travel-world-tourism-organization-amazing-hand-world-map-thumbnail.png"
+        alt="Logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Explore the World with Us</h1>
+        <p>
+          Your adventure awaits! Discover beautiful destinations, breathtaking
+          landscapes, and cultural wonders.
+        </p>
+        <a href="#services" class="cta-button">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Travel Destination"
+        />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Guided Tours</h3>
+          <p>Experience unforgettable guided tours led by our experts.</p>
+        </div>
+        <div class="service-card">
+          <h3>Customized Packages</h3>
+          <p>Create a unique travel experience tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>24/7 Support</h3>
+          <p>We are available around the clock to help you on your journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Basic Plan</h3>
+          <p>$499</p>
+          <p>3 days, 2 nights</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Standard Plan</h3>
+          <p>$899</p>
+          <p>5 days, 4 nights</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium Plan</h3>
+          <p>$1299</p>
+          <p>7 days, 6 nights</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Embedded Product Video -->
+    <section id="video-section">
+      <h2>Some Great Views</h2>
+      <video id="video" controls>
+        <source
+          src="https://videos.pexels.com/video-files/1820193/1820193-sd_640_360_30fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Subscribe" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Explore the World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
