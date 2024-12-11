@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Please fill out the form below to share your feedback and help us
+        improve!
+      </p>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age:</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="18"
+            max="100"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dropdown">Which option best describes you:</label>
+          <select id="dropdown" name="role">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>What is your current level of satisfaction?</label>
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="satisfaction"
+                value="very-satisfied"
+                required
+              />
+              Very Satisfied
+            </label>
+            <label>
+              <input type="radio" name="satisfaction" value="satisfied" />
+              Satisfied
+            </label>
+            <label>
+              <input type="radio" name="satisfaction" value="neutral" />
+              Neutral
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Select your interests:</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="interest" value="technology" />
+              Technology
+            </label>
+            <label>
+              <input type="checkbox" name="interest" value="sports" />
+              Sports
+            </label>
+            <label>
+              <input type="checkbox" name="interest" value="music" />
+              Music
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comments here"
+          ></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
